@@ -1,37 +1,59 @@
 # Hand Gesture Sign Language Recognition
 
-## 📌 Project Overview
+## 📌 Project Description
 
-Hand Gesture Sign Language Recognition is a computer vision based system that detects and recognizes hand gestures using a webcam. The system uses **Python, OpenCV, and MediaPipe** to identify hand landmarks and interpret gestures in real time. This project helps bridge the communication gap between hearing-impaired individuals and others.
+Hand Gesture Sign Language Recognition is a computer vision project that detects and recognizes hand gestures using a webcam. The system uses **Python, OpenCV, MediaPipe, and Machine Learning** to identify hand landmarks and classify gestures in real time.
+
+This project helps demonstrate how computer vision can assist in communication with people who use sign language.
 
 ---
 
 ## 🎯 Objectives
 
-* Detect hand gestures using a webcam.
-* Recognize sign language gestures in real time.
-* Provide an efficient and user-friendly gesture recognition system.
-* Demonstrate the use of computer vision and machine learning in sign language interpretation.
+* To detect hand gestures using a webcam.
+* To classify different hand signs such as Hello, Yes, No, Thank You, etc.
+* To build a real-time sign language recognition system.
+* To apply computer vision and machine learning techniques.
 
 ---
 
 ## 🛠 Technologies Used
 
-* **Python**
-* **OpenCV**
-* **MediaPipe**
-* **TensorFlow / Keras**
-* **NumPy**
+* Python
+* OpenCV
+* MediaPipe
+* TensorFlow / Keras
+* NumPy
+
+---
+
+## 📂 Project Structure
+
+Hand-Gesture-Sign-Language
+
+Data
+├── Hello
+├── I Love You
+├── No
+├── Ok
+├── Please
+├── Thank You
+└── Yes
+
+model
+datacollection.py
+test.py
+README.md
 
 ---
 
 ## ⚙️ System Requirements
 
-* Python 3.8 or higher
+* Python 3.8 or above
 * Webcam
 * Windows / Linux / macOS
 
-Required Python libraries:
+Install required libraries:
 
 pip install opencv-python
 pip install mediapipe
@@ -40,62 +62,60 @@ pip install numpy
 
 ---
 
-## 📂 Project Structure
+## 📸 Dataset Collection
 
-Hand-Gesture-Sign-Language
-│
-├── test.py
-├── model.h5
-├── utils
-│   └── cvfpscalc.py
-├── images
-├── README.md
+The dataset for training the model is collected using the **datacollection.py** script.
+This script captures images from the webcam and stores them inside the **Data** folder according to gesture categories.
+
+Example gesture classes:
+
+* Hello
+* I Love You
+* No
+* Ok
+* Please
+* Thank You
+* Yes
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ Running the Project
 
-1. Clone the repository
+### Step 1: Clone the Repository
 
 git clone https://github.com/yourusername/hand-gesture-sign-language.git
 
-2. Open the project folder
+### Step 2: Open the Project Folder
 
 cd hand-gesture-sign-language
 
-3. Install required libraries
+### Step 3: Install Dependencies
 
 pip install -r requirements.txt
 
-4. Run the program
+### Step 4: Run Gesture Detection
 
 python test.py
 
-5. The webcam will open and the system will start detecting hand gestures.
+The webcam will start and the system will detect hand gestures in real time.
 
 ---
 
 ## 📊 Features
 
-* Real-time hand gesture detection
-* Fast gesture recognition
+* Real-time hand detection
+* Gesture classification
 * Webcam-based interaction
 * Simple and lightweight implementation
 
 ---
 
-## 📷 Example Output
-
-The system detects hand gestures and displays the recognized gesture on the screen in real time.
-
----
-
 ## 🔮 Future Improvements
 
-* Support for full sign language sentences
-* Mobile application integration
-* Higher gesture accuracy with deep learning models
+* Support for more sign language gestures
 * Real-time text or speech output
+* Mobile application version
+* Higher accuracy using deep learning models
 
 ---
 
